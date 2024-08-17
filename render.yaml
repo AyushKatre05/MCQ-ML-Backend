@@ -3,10 +3,10 @@ services:
     name: flask-backend
     env: python
     buildCommand: |
-      pip install -r requirements.txt
+      pip install -r backend/requirements.txt
       chmod +x backend/startup.sh
       ./backend/startup.sh
-    startCommand: "gunicorn app:app --chdir backend"
+    startCommand: "./backend/startup.sh"
     repo: https://github.com/AyushKatre05/MCQ-ML-Backend.git
     branch: main
     directory: backend
