@@ -1,10 +1,10 @@
-Flask
 Flask-Cors
 Flask-Bootstrap
-gunicorn
-spacy
 PyPDF2
 requests
 numpy
 pandas
+flask
+spacy
+gunicorn
 

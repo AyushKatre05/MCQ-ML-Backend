@@ -1,3 +1,11 @@
-buildCommand: |
-  pip install -r requirements.txt
-  python -m spacy download en_core_web_sm
+services:
+  - type: web
+    name: flask-backend
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
+    startCommand: gunicorn app:app
+    repo: https://github.com/AyushKatre05/MCQ-ML-Backend.git
+    branch: main
+    directory: backend
