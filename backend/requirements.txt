@@ -1,4 +1,5 @@
 Flask-Cors
+Flask-Bootstrap
 PyPDF2
 requests
 numpy
@@ -6,4 +7,3 @@ pandas
 flask
 spacy
 gunicorn
-
