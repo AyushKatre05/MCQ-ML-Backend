@@ -11,7 +11,7 @@ Bootstrap(app)
 CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
 
 # Load English tokenizer, tagger, parser, NER, and word vectors
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load('en_core_web_sm')
 
 def generate_mcqs(text, num_questions=5):
     if not text.strip():
