@@ -2,5 +2,6 @@ services:
   - type: web
     name: flask-app
     env: python
-    buildCommand: ./setup.sh
+    buildCommand: pip install -r requirements.txt
     startCommand: python app.py
+    pythonVersion: 3.10
