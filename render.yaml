@@ -1,11 +1,6 @@
 services:
   - type: web
-    name: flask-backend
+    name: flask-app
     env: python
-    buildCommand: |
-      pip install -r requirements.txt
-      chmod +x startup.sh
-      ./startup.sh
-    startCommand: "./startup.sh"
-    repo: https://github.com/AyushKatre05/MCQ-ML-Backend.git
-    branch: main
+    buildCommand: ./setup.sh
+    startCommand: python app.py
